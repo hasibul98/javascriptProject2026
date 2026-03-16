@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(160deg, #7b86ff, #915aff);
+    color: #fff;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+header {
+    padding: 40px 20px ;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.search-box input{
+    width: 60%;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.filters{
+    margin: 20px 0;
+}
+
+.filter-btn {
+    background: rgba(255,255,255,0.3);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover{
+    background: #fff;
+    color: #7b86ff;
+}
+
+.projects-container{
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.project-card{
+     background: rgba(255,255,255,0.15);
+     padding: 25px;
+     border-radius: 18px;
+     text-align: left;
+     backdrop-filter: blur(12px);
+     transition: 0.3s;
+}
+
+.project-card:hover{
+    transform: translateY(-6px);
+}
+
+.project-card h2{
+    font-size: 22px;
+    color: #fff;
+}
+
+.project-card p{
+    margin: 10px 0 20px;
+    font-size: 15px;
+    opacity: .9;
+}
+
+.view-btn{
+    display: inline-block;
+    background: linear-gradient(90deg, #7b86ff, #915aff);
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+
+
+
+
+
+
+
+
