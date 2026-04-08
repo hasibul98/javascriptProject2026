@@ -19,7 +19,7 @@ buttons.forEach(function(button){
                 counter = pictures.length - 1;
             }
 
-            imgDiv.style.background = `url(${pictures[counter]})`;
+            imgDiv.style.background = `url(${pictures[counter]}) center/cover fixed no-repeat`;
             
         }
 
@@ -32,7 +32,7 @@ buttons.forEach(function(button){
                 counter = 0;
             }
 
-            imgDiv.style.background = `url(${pictures[counter]})`;
+            imgDiv.style.background = `url(${pictures[counter]}) center/cover fixed no-repeat`;
             
         }
     })
