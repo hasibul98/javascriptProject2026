@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code editor</title>
+
+
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <section class="container">
+        <h1>Code Editor 🤯</h1>
+
+        <div class="editor">
+            <div class="left">
+                <label> <i class="fa-brands fa-html5"></i> HTML</label>
+                <textarea onkeyup="run()" spellcheck="false" name="" id="html-code"></textarea>
+
+
+
+                <label><i class="fa-brands fa-css3-alt"></i> CSS</label>
+                <textarea onkeyup="run()" spellcheck="false" name="" id="css-code"></textarea>
+
+
+
+                <label> <i class="fa-brands fa-square-js"></i> JavaScript</label>
+                <textarea onkeyup="run()" spellcheck="false" name="" id="js-code"></textarea>
+
+
+                
+            </div>
+
+
+            <div class="right">
+                <label><i class="fa-solid fa-play"></i> Output</label>
+                <iframe id="output"></iframe>
+            </div>
+
+        </div>
+        
+    </section>
+
+
+    
+</body>
+</html>
