@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+
+
+
+</head>
+<body>
+    
+    <section id="menu">
+       <div class="logo">
+         <img src="./images/visualhunter-4c935380ee.png" alt="">
+         <h2 class="logo-text">CoCoMeLoN</h2>
+       </div>
+
+       <div class="items">
+        
+       <li><i class="fa-solid fa-chart-pie"></i><a href="#">Dashboard</a></li>
+        <li><i class="fa-brands fa-uikit"></i><a href="#">UI Element</a></li>
+        <li><i class="fa-solid fa-th-large"></i><a href="#">Table</a></li>
+        <li><i class="fa-solid fa-edit"></i><a href="#">Forms</a></li>
+        <li><i class="fa-solid fa-credit-card"></i><a href="#">Cards</a></li>
+        <li><i class="fa-solid fa-hamburger"></i><a href="#">Modal</a></li>
+        <li><i class="fa-solid fa-chart-line"></i><a href="#">Blank</a></li>
+
+       </div>
+
+    </section>
+
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="menu-btn" class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="search">
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <i class="fa-regular fa-bell"></i>
+                <img src="https://images.unsplash.com/photo-1718209881007-c0ecdfc00f9d?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+
+        </div>
+
+
+        <h3 class="i-name">
+            Dashboard
+        </h3>
+
+        <div class="values">
+            <div class="val-box">
+                <i class="fa-solid fa-users"></i>
+                <div>
+                    <h3>8,267</h3>
+                    <span>New Users</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div>
+                    <h3>200,521</h3>
+                    <span>Total Orders</span>
+                </div>
+            </div>
+            <div class="val-box">
+               <i class="fa-solid fa-cart-shopping"></i>
+                <div>
+                    <h3>215,542</h3>
+                    <span>Products Sell</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <div>
+                    <h3>67,789</h3>
+                    <span>This Month</span>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="board">
+            <table width = '100%'>
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Title</td>
+                        <td>Status</td>
+                        <td>Role</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>John Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1688828792704-4218151b5d97?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>jakaria</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">admin</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1688828792910-ca9567d15054?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>ashiki Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1631169551709-17db9617c538?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>Mokul Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1678483958685-07c72aad928a?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>Abir Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1638494142085-afa5b36ba7e9?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>Rinku Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1667843433828-24ab685c0ef5?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>Atik Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1649361927758-b7f3262e4110?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>Rakib Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>John Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>John Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>John Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>John Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>John Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>John Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>John Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>John Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>John Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>John Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>John Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                    <tr>
+                         <td class="people">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="people-de">
+                            <h5>John Doe</h5>
+                            <p>john@example.com</p>
+                        </div>
+
+                    </td>
+                    <td class="people-des">
+                        <h5>Software Enginer</h5>
+                        <p>Web dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+
+                    <td class="role">Owner</td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                   </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+
+
+
+</body>
+</html>
