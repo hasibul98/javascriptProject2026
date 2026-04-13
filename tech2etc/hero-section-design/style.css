@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+    padding: 1.5rem 7rem;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.15);
+}
+
+.nav .logo h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2a2a2a;
+}
+
+.nav .navigation ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.nav .navigation ul li{
+    list-style: none;
+    padding: 0 1rem;
+}
+
+.nav .navigation ul li a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #2a2a2a;
+    transition: 0.3s ease;
+}
+
+.nav .navigation ul li a:hover{
+    color: #fe2f40;
+}
+
+.nav .navigation ul li a span{
+    background-color: #fe3f40;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 23px;
+    letter-spacing: 0.25px;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 7rem;
+    padding-top: 2rem;
+}
+
+.banner::after{
+    content: '';
+    background-image: url(images/left.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    width: 193px;
+    height: 467px;
+}
+.banner::before{
+    content: '';
+    background-image: url(images/right.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 90px;
+    width: 98px;
+    height: 290px;
+}
+
+.banner .text {
+    width: 45%;
+}
+
+.banner .text h2{
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #fe3f40;
+    text-transform: uppercase;
+}
+.banner .text h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 65px;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+    color: #2c2c2c;
+    
+}
+.banner .text p{
+    font-size: .9rem;
+    line-height: 30px;
+    padding-bottom: 12px;
+    letter-spacing: 1px;
+    color: #2a2a2a;
+    
+}
+
+.banner .email{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #05a4ed;
+    padding: 0 7px;
+    width: 380px;
+    height: 65px;
+    border-radius: 30px;
+}
+
+.banner .email input{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    color: #fff;
+    padding-left: 15px;
+}
+
+
+.banner .email input::placeholder{
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.banner .email button{
+    background: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+    color: #fe3f40;
+    padding: 14px 25px;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.banner .image{
+    width: 45%;
+}
+
+.banner .image img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
