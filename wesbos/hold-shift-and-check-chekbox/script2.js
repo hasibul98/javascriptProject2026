@@ -8,6 +8,7 @@ function updateColor(checkbox) {
 
 function handleCheck(e) {
     // Shift + Click logic
+    console.clear();
     let boxes = [...checkboxes];
     if (e.shiftKey && lastChecked) {
         const boxes = [...checkboxes];
@@ -23,12 +24,13 @@ function handleCheck(e) {
             updateColor(box);
         });
     }
-    // console.log('start', boxes.indexOf(this))
-    // console.log('end', boxes.indexOf(lastChecked))
+    console.log('start', boxes.indexOf(this))
+    console.log('end', boxes.indexOf(lastChecked))
 
     updateColor(this);
     lastChecked = this;
     console.log('last checked',lastChecked)
+    console.log('last checked index', boxes.indexOf(lastChecked))
 }
 
 // single event binding
