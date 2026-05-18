@@ -4,5 +4,6 @@ window.addEventListener('scroll', function(){
 
     var newWidth = 100 + (scroll / 5);
     img.style.width = newWidth + '%';
+    img.style.height = newWidth + '%';
 
 });
