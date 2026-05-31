@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" type="module" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎨 Text-to-Image Generator</h1>
+            <p>Hugging Face Inference API - আপনার কল্পনাকে ছবিতে রূপ দিন</p>
+        </div>
+        
+        <div class="content">
+            <div class="input-section">
+                <div class="model-selector">
+                    <label>🤖 মডেল নির্বাচন করুন:</label>
+                    <select id="modelSelect">
+                        <option value="Tongyi-MAI/Z-Image-Turbo">Z-Image-Turbo (দ্রুত)</option>
+                        <option value="black-forest-labs/FLUX.1-dev">FLUX.1-dev (উচ্চ মান)</option>
+                        <option value="stabilityai/stable-diffusion-xl-base-1.0">Stable Diffusion XL</option>
+                        <option value="dreamlike-art/dreamlike-photoreal-2.0">Dreamlike Photoreal</option>
+                    </select>
+                </div>
+                
+                <div class="prompt-input">
+                    <label>📝 আপনার প্রম্পট লিখুন:</label>
+                    <textarea id="prompt" rows="3" placeholder="যেমন: Astronaut riding a horse, sunset sky, highly detailed, cinematic lighting">Astronaut riding a horse</textarea>
+                </div>
+                
+                <div class="parameters">
+                    <h3>⚙️ প্যারামিটার সমূহ</h3>
+                    <div class="param-group">
+                        <div class="param-field">
+                            <label>Inference Steps:</label>
+                            <input type="number" id="steps" value="5" min="1" max="50">
+                        </div>
+                        <div class="param-field">
+                            <label>Guidance Scale:</label>
+                            <input type="number" id="guidance" value="7.5" min="1" max="20" step="0.5">
+                        </div>
+                        <div class="param-field">
+                            <label>Number of Images:</label>
+                            <input type="number" id="imageCount" value="1" min="1">
+                        </div>
+                        <div class="param-field">
+                            <label>Provider:</label>
+                            <select id="provider">
+                                <option value="wavespeed">wavespeed</option>
+                                <option value="hf-inference">hf-inference</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="generate-btn" id="generateBtn">✨ ইমেজ জেনারেট করুন</button>
+            </div>
+            
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>ইমেজ জেনারেট হচ্ছে, দয়া করে অপেক্ষা করুন...</p>
+            </div>
+            
+            <div class="result-section" id="result">
+                <div class="image-container">
+                    <div class="images-grid" id="generatedImages"></div>
+                </div>
+            </div>
+            
+            <div class="error" id="error"></div>
+            <div class="info">
+                💡 টিপ: Hugging Face Token প্রয়োজন। নিচের কোণায় আপনার Token সেট করুন।
+            </div>
+        </div>
+    </div>
+</body>
+</html>
