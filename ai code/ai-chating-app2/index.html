@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="bn" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini AI Chat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">
+          <div class="brand-mark">G</div>
+          <div>
+            <strong>Gemini Chat</strong>
+            <span>text + image assistant</span>
+          </div>
+        </div>
+
+        <button class="new-chat-btn" id="newChatBtn" type="button">
+          <i data-lucide="plus"></i>
+          <span>New Chat</span>
+        </button>
+
+        <div class="history-head">
+          <span>Conversation History</span>
+          <button class="icon-btn" id="clearAllBtn" type="button" title="Clear all chats" aria-label="Clear all chats">
+            <i data-lucide="trash-2"></i>
+          </button>
+        </div>
+        <nav class="chat-list" id="chatList" aria-label="Saved conversations"></nav>
+
+        <div class="settings-panel">
+          <label for="apiKeyInput">Gemini API Key</label>
+          <div class="api-row">
+            <input id="apiKeyInput" type="password" autocomplete="off" placeholder="AIza..." />
+            <button class="icon-btn" id="saveKeyBtn" type="button" title="Save key" aria-label="Save key">
+              <i data-lucide="save"></i>
+            </button>
+          </div>
+          <label for="modelInput">Model</label>
+          <input id="modelInput" type="text" value="gemini-3.5-flash" />
+        </div>
+      </aside>
+
+      <main class="chat-main">
+        <header class="topbar">
+          <button class="icon-btn mobile-only" id="menuBtn" type="button" title="Open menu" aria-label="Open menu">
+            <i data-lucide="menu"></i>
+          </button>
+          <div class="chat-title-wrap">
+            <input id="chatTitle" class="chat-title" maxlength="64" aria-label="Chat title" />
+            <span id="chatMeta">Ready</span>
+          </div>
+          <div class="top-actions">
+            <button class="icon-btn" id="themeBtn" type="button" title="Switch theme" aria-label="Switch theme">
+              <i data-lucide="sun-moon"></i>
+            </button>
+            <button class="icon-btn" id="exportTxtBtn" type="button" title="Export TXT" aria-label="Export TXT">
+              <i data-lucide="file-text"></i>
+            </button>
+            <button class="icon-btn" id="exportJsonBtn" type="button" title="Export JSON" aria-label="Export JSON">
+              <i data-lucide="download"></i>
+            </button>
+          </div>
+        </header>
+
+        <section class="messages" id="messages" aria-live="polite"></section>
+
+        <form class="composer" id="composer">
+          <div class="drop-zone" id="dropZone">
+            <div class="preview-grid" id="previewGrid"></div>
+            <div class="input-row">
+              <button class="icon-btn attach-btn" id="imageBtn" type="button" title="Upload images" aria-label="Upload images">
+                <i data-lucide="image-plus"></i>
+              </button>
+              <textarea id="promptInput" rows="1" placeholder="Message Gemini..." autocomplete="off"></textarea>
+              <button class="icon-btn stop-btn hidden" id="stopBtn" type="button" title="Stop generating" aria-label="Stop generating">
+                <i data-lucide="square"></i>
+              </button>
+              <button class="send-btn" id="sendBtn" type="submit" title="Send" aria-label="Send">
+                <i data-lucide="send-horizontal"></i>
+              </button>
+            </div>
+            <div class="composer-foot">
+              <span>Enter to send, Shift+Enter for new line. Paste or drop images.</span>
+              <span id="statusText">Idle</span>
+            </div>
+          </div>
+          <input id="fileInput" type="file" accept="image/*" multiple hidden />
+        </form>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="app.js?v=20260630-fix1"></script>
+  </body>
+</html>
