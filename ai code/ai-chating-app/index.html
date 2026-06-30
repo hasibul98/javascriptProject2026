@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar" aria-label="Chats">
+            <div class="brand">
+                <span class="brand-mark">G</span>
+                <div>
+                    <h1>Gemini AI</h1>
+                    <p>Local chat workspace</p>
+                </div>
+            </div>
+
+            <button id="newChat" class="primary-btn" type="button">+ New Chat</button>
+            <div id="chatList" class="chat-list"></div>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <div>
+                    <h2 id="chatTitle">New Chat</h2>
+                    <p id="chatMeta">0 messages</p>
+                </div>
+                <div class="header-actions">
+                    <button id="renameChat" class="ghost-btn" type="button">Rename</button>
+                    <button id="exportTxt" class="ghost-btn" type="button">TXT</button>
+                    <button id="exportJson" class="ghost-btn" type="button">JSON</button>
+                </div>
+            </header>
+
+            <section id="chatContainer" class="chat-container" aria-live="polite"></section>
+
+            <div id="previewContainer" class="preview-container"></div>
+
+            <form id="composer" class="input-area">
+                <input type="file" id="imageInput" accept="image/*" hidden>
+                <button id="imageBtn" class="icon-btn" type="button" title="Upload image" aria-label="Upload image">Image</button>
+                <textarea id="prompt" rows="1" placeholder="Message Gemini..."></textarea>
+                <button id="stopBtn" class="stop-btn" type="button" disabled>Stop</button>
+                <button id="sendBtn" class="send-btn" type="submit">Send</button>
+            </form>
+        </main>
+    </div>
+
+    <template id="messageTemplate">
+        <article class="message">
+            <div class="avatar"></div>
+            <div class="message-body">
+                <div class="bubble"></div>
+                <div class="message-actions"></div>
+                <time class="time"></time>
+            </div>
+        </article>
+    </template>
+
+    <script src="utils.js"></script>
+    <script src="gemini.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
